@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Container from '@mui/material/Container';
+import {ThemeProvider} from '@emotion/react';
+import theme from './styles/theme/theme';
+import AppBar from './components/appBar/Index';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+       <Container maxWidth="xl" sx={{backgroundColor:"#fff"}}>
+          <AppBar />
+      </Container>
+    </ThemeProvider>
+   
   );
 }
 
