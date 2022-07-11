@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Container from '@mui/material/Container';
 import {ThemeProvider} from '@emotion/react';
