@@ -7,6 +7,7 @@ import Banner from './components/banner/Index';
 import Promotions from './components/promotions/Index';
 import Products from './components/products/Index';
 import { Typography,Box } from '@mui/material';
+import Footer from './components/footer/Index';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Typography variant='h4'>Our Products</Typography>
           </Box>
           <Products />
+          <Footer />
       </Container>
     </ThemeProvider>
    
