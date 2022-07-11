@@ -4,6 +4,8 @@ import Container from '@mui/material/Container';
 import {ThemeProvider} from '@emotion/react';
 import theme from './styles/theme/theme';
 import AppBar from './components/appBar/Index';
+import Banner from './components/banner/Index';
+import Promotions from './components/promotions/Index';
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
     <ThemeProvider theme={theme}>
        <Container maxWidth="xl" sx={{backgroundColor:"#fff"}}>
           <AppBar />
+          <Banner />
+          <Promotions />
       </Container>
     </ThemeProvider>
    

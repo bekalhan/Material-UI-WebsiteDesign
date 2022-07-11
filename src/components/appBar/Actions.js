@@ -4,8 +4,10 @@ import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Colors } from "../../styles/theme/theme";
+import { Component } from "react";
 
-export default function Actions({ matches }) {
+export default function Actions( {matches} ) {
+
 
   const Component = matches ? ActionIconsContainerMobile : ActionIconsContainerDesktop;
 
