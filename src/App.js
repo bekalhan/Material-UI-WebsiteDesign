@@ -6,7 +6,8 @@ import theme from './styles/theme/theme';
 import AppBar from './components/appBar/Index';
 import Banner from './components/banner/Index';
 import Promotions from './components/promotions/Index';
-
+import Products from './components/products/Index';
+import { Typography,Box } from '@mui/material';
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
           <AppBar />
           <Banner />
           <Promotions />
+          <Box display="flex" justifyContent="center" sx={{p:4}}  >
+              <Typography variant='h4'>Our Products</Typography>
+          </Box>
+          <Products />
       </Container>
     </ThemeProvider>
    
